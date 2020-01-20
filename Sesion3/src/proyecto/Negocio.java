@@ -3,7 +3,7 @@ package proyecto;
 public class Negocio {
 	
 	
-	//Conversion de decimal a ......
+	//Conversion de decimal a .......
 	
 	public String convierteDecimalABinario (String numero) {
 		String resultado=new String();
