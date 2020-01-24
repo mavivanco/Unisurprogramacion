@@ -2,7 +2,7 @@ package proyecto;
 
 public class Negocio {
 	
-	
+
 	//Conversion de decimal a .......
 	
 	public String convierteDecimalABinario (String numero) {
@@ -49,30 +49,35 @@ public class Negocio {
 	
 	//Conversion de binario a ......
 	
-	public String convierteBinarioADecimal (String numero) {
+	public int convierteBinarioADecimal (String numero) {
 		String resultado=new String();
-		int binario = Integer.parseInt(numero);
+		//int binario = Integer.parseInt(numero);
 
-		//Falta implementar.......
+		 int dec=Integer.parseInt(numero,2);
+                 
+                      System.out.print("DECIMAL: "+dec);
 		
-		
-		return resultado;
+		return dec;
 	} 
 	public String convierteBinarioAOctal (String numero) {
 		String resultado=new String();
-		int binario = Integer.parseInt(numero);
+		//int binario = Integer.parseInt(numero);
 
-		//Falta implementar.......
+		int dec=Integer.parseInt(numero,2);
+                    numero=Integer.toOctalString(dec);
+                System.out.print("OCTAL: "+numero);
 		
-		
+		resultado=numero;
 		return resultado;
 	} 
 	public String convierteBinarioAHexadecimal (String numero) {
 		String resultado=new String();
-		int binario = Integer.parseInt(numero);
+		//int binario = Integer.parseInt(numero);
 
-		//Falta implementar.......
-		
+		int dec=Integer.parseInt(numero,2);
+                   numero=Integer.toHexString(dec);
+                   System.out.print("HEXADECIMAL: "+numero);
+		resultado=numero;
 		
 		return resultado;
 	} 
@@ -84,27 +89,33 @@ public class Negocio {
 		String resultado=new String();
 		int octal = Integer.parseInt(numero);
 
-		//Falta implementar.......
+		int dec=Integer.parseInt(numero,8);
+                    numero=Integer.toBinaryString(dec);
+                    System.out.print("BINARIO: "+numero);
 		
-		
+		 resultado=numero;
 		return resultado;
 	} 
-	public String convierteOctalADecimal (String numero) {
-		String resultado=new String();
-		int octal = Integer.parseInt(numero);
+	public int convierteOctalADecimal (String numero) {
+		//String resultado=new String();
+                
+		//int octal = Integer.parseInt(numero);
 
-		//Falta implementar.......
+		 int dec=Integer.parseInt(numero,8);
+                       System.out.print("DECIMAL: "+dec);
 		
 		
-		return resultado;
+		return dec;
 	} 
 	
 	public String convierteOctalAHexadecimal (String numero) {
 		String resultado=new String();
-		int octal = Integer.parseInt(numero);
+		//int octal = Integer.parseInt(numero);
 
-		//Falta implementar.......
-		
+		 int dec=Integer.parseInt(numero,8);
+                      numero=Integer.toHexString(dec);
+                       System.out.print("HEXADECIMAL: "+numero);
+		resultado=numero;
 		
 		return resultado;
 	} 
@@ -114,31 +125,39 @@ public class Negocio {
 	
 	public String convierteHexadecimalABinario (String numero) {
 		String resultado=new String();
-		int hexadecimal = Integer.parseInt(numero);
+		//int hexadecimal = Integer.parseInt(numero);
 
-		//Falta implementar.......
+		int dec=Integer.parseInt(numero,16);
+                     numero=Integer.toBinaryString(dec);
+                     System.out.print("BINARIO: "+numero);
 		
-		
+		resultado=numero;
 		return resultado;
 	} 
 	
-	public String convierteHexadecimalADecimal (String numero) {
+	public int convierteHexadecimalADecimal (String numero) {
 		String resultado=new String();
-		int hexadecimal = Integer.parseInt(numero);
+		//int hexadecimal = Integer.parseInt(numero);
 
-		//Falta implementar.......
+		int dec=Integer.parseInt(numero,16);
+                 System.out.print("DECIMAL: "+dec);
 		
 		
-		return resultado;
+		return dec;
 	} 
 	public String convierteHexadecimalAOctal (String numero) {
 		String resultado=new String();
-		int hexadecimal = Integer.parseInt(numero);
+		//int hexadecimal = Integer.parseInt(numero);
 		
-		//Falta implementar.......
+		 int dec=Integer.parseInt(numero,16);
+                 numero=Integer.toOctalString(dec);
+                  System.out.print("OCTAL: "+numero);
 		
-		
+		resultado=numero;
 		return resultado;
 	} 
-	
+
+  
+
 }
+
