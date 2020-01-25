@@ -6,8 +6,14 @@ public class ConvertirHexadecimalABinario implements ConversionEstrategias {
     public String Convertir(String ValorenHexadecimal) {
 	 String Resultado=new String();
 	 try {
-		 Resultado = "Pendiente por implementar";
-		}
+		    ConvertirHexadecimalADecimal HaxadecimalADecimal = new ConvertirHexadecimalADecimal();
+		    ConvertirDecimalABinario DecimalABinario = new ConvertirDecimalABinario();
+		    
+		    String NumeroDecimal = HaxadecimalADecimal.Convertir(ValorenHexadecimal);
+		    
+		    return DecimalABinario.Convertir(NumeroDecimal);
+		    
+	    }
 		catch(Exception e) {
 			Resultado = "Ocurrió un error en la conversión: " + e.getMessage();
 		}
