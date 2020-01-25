@@ -3,7 +3,7 @@ package Negocio;
 public class ConvertirOctalABinario implements ConversionEstrategias {
 	
  @Override
-    public String Convertir(String ValorenDecimal) {
+    public String Convertir(String ValorenOctal) {
 	 String Resultado=new String();
 	 try {
 		 Resultado = "Pendiente por implementar";
